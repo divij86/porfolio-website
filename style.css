@@ -29,7 +29,7 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #ffffff;
+  background-color: gray;
   z-index: 99;
 }
 
@@ -40,7 +40,9 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
+  display: flex;
+    
+    
 }
 
 nav .logo a {
@@ -84,13 +86,12 @@ ul li a {
 }
 
 ul li a:hover {
-  border-top-color: var(--secondary-color);
-  border-bottom-color: var(--secondary-color);
-  color: var(--secondary-color);
+ color: #faf5ff;
 }
 
 .section {
   background-color: var(--extra-light);
+  background-color: darkslategrey;
 }
 
 .section__container {
@@ -101,12 +102,14 @@ ul li a:hover {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 4rem;
+  background-color: darkslategrey;
 }
 
 .content {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-top: 20px;
 }
 
 .subtitle {
@@ -145,19 +148,18 @@ ul li a:hover {
   letter-spacing: 2px;
   padding: 1rem 2rem;
   outline: none;
-  border: 2px solid var(--primary-color);
   border-radius: 10px;
   transition: 0.3s;
   cursor: pointer;
 }
 
 .hire__me {
-  background-color: var(--primary-color);
-  color: #ffffff;
+  background-color: rgb(229, 139, 154);
+  color: white;
 }
 
 .hire__me:hover {
-  background-color: var(--primary-color-dark);
+  background-color: burlywood;
 }
 
 .portfolio {
@@ -172,6 +174,7 @@ ul li a:hover {
 .image {
   display: grid;
   place-items: center;
+  padding-top: 30px;
 }
 
 .image img {
@@ -371,4 +374,19 @@ ul li a:hover {
   #contactheader h2,
   #contactheader p{
     color: #ffffff;
-  }
+}
+.handle i{
+    white-space: wrap;
+    overflow: hidden;
+    font-size: large;
+
+}
+#resume .resume-img img{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 100px;
+
+}
